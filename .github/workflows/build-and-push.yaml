@@ -7,15 +7,15 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY: ghcr.io
+  REGISTRY: dmocontainerapp11a19c.azurecr.io
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: 
+    permissions:
       contents: read
-      packages: write 
+      packages: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
