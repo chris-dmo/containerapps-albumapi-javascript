@@ -1,0 +1,14 @@
+{
+    "containerApps.deploymentConfigurations": [
+        {
+            "label": "dmo-app",
+            "type": "AcrDockerBuildRequest",
+            "dockerfilePath": "src\\Dockerfile",
+            "srcPath": "src",
+            "envPath": "",
+            "resourceGroup": "dmo-container-app",
+            "containerApp": "dmo-app",
+            "containerRegistry": "dmocontainerapp11a19c"
+        }
+    ]
+}
